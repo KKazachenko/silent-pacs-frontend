@@ -1,4 +1,3 @@
-import {useState} from "react";
 import InputField from "./InputField";
 import { Grid } from "@mui/material";
 
@@ -15,27 +14,24 @@ export default function RegisterForm({
   password,
   onUsernameChange,
   onPasswordChange,
-  onSubmit,
 }: Props) {
   return (
-    <form className="form-group" onSubmit={onSubmit}>
-      <Grid container spacing={2} direction="column">
-        <Grid item>
-          <InputField
-            value={username}
-            onChange={onUsernameChange}
-            placeholder="Enter username"
-          />
-        </Grid>
-        <Grid item>
-          <InputField
-            type="password"
-            value={password}
-            onChange={onPasswordChange}
-            placeholder="Enter password"
-          />
-        </Grid>
+    <Grid container spacing={2} direction="column">
+      <Grid item>
+        <InputField
+          value={username}
+          onChange={onUsernameChange}
+          placeholder="Enter username"
+        />
       </Grid>
-    </form>
+      <Grid item>
+        <InputField
+          type="password"
+          value={password}
+          onChange={onPasswordChange}
+          placeholder="Enter password"
+        />
+      </Grid>
+    </Grid>
   );
 }

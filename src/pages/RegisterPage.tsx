@@ -9,8 +9,6 @@ function RegisterPage() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        console.log("Username:", username);
-        console.log("Password:", password);
     };
 
     return (
