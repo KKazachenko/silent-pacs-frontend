@@ -15,7 +15,7 @@ function InputField({
 }: InputFieldProps) {
     return (
         <TextField
-            size="small"
+            size="medium"
             value={value}
             type={type}
             placeholder={placeholder}

@@ -6,7 +6,6 @@ type Props = {
   password: string;
   onUsernameChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onPasswordChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onSubmit: (e: React.FormEvent) => void;
 };
 
 export default function RegisterForm({
@@ -15,9 +14,10 @@ export default function RegisterForm({
   onUsernameChange,
   onPasswordChange,
 }: Props) {
+
   return (
     <Grid container spacing={2} direction="column">
-      <Grid item>
+      <Grid item xs={12}>
         <InputField
           value={username}
           onChange={onUsernameChange}

@@ -11,6 +11,7 @@ function Header() {
                 </Typography>
                 <nav className="custom-nav">
                     <Link to="/">Home</Link>
+                    <Link to="/profile">Profile</Link>
                 </nav>
             </Toolbar>
         </AppBar>
