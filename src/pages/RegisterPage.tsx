@@ -86,9 +86,6 @@ function RegisterPage() {
               label="Organization"
               onChange={(e) => setSelectedOrg(e.target.value)}
             >
-              <MenuItem value="">
-                <em>None</em>
-              </MenuItem>
               {organizations.map((org) => (
                 <MenuItem key={org.name} value={org.name}>
                   {org.name}
